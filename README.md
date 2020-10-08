@@ -1,10 +1,10 @@
 # Raspberrypi Toolbox
 This is a toolbox for various testing and troubleshooting for raspberry.
 
-# Run in kubernetes
-kubectl run -ti toolbox --image=ludwigprager/toolbox-arm32v6:1 -- /bin/bash
+# Run In Kubernetes
+kubectl run -ti --rm toolbox-$RANDOM --image=ludwigprager/toolbox-arm32v6:1
 
-# Run in docker
+# Run In Docker
 docker run -ti \
   --name toolbox \
   ludwigprager/toolbox-arm32v6 \
@@ -14,7 +14,6 @@ or
 
 docker exec -ti toolbox /bin/sh
 
-# Build
-
+# Build The Image On A Raspberry Yourself
 source set-env.sh
 docker build -t $TOOLBOX_ARM32_IMAGE .
