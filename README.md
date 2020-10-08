@@ -1,4 +1,4 @@
-# raspberry toolbox
+# Raspberrypi Toolbox
 This is a toolbox for various testing and troubleshooting for raspberry.
 
 # Run in kubernetes
