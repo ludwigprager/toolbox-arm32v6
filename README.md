@@ -2,7 +2,7 @@
 This is a toolbox for various testing and troubleshooting for raspberry.
 
 # Run in kubernetes
-kubectl run -ti toolbox --image=ludwigprager/toolbox-arm32v6 -- /bin/bash
+kubectl run -ti toolbox --image=ludwigprager/toolbox-arm32v6:1 -- /bin/bash
 
 # Run in docker
 docker run -ti \
